@@ -7,7 +7,7 @@ export const Layout = () => {
         <div className="layout-container">
             <div className="left-panel">
                 <div className="navigation">
-                    <CButton startIcon={<Newspaper/>} variant='contained' color='white' href='#' >RandomNews</CButton>
+                    <CButton startIcon={<Newspaper/>} sx={{backgroundColor: '#ffffff'}} variant='contained' color='white' href='#' >RandomNews</CButton>
                 </div>
                 <div className="main-content"></div>
             </div>
