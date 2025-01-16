@@ -1,16 +1,20 @@
 import './Layout.css'
-import Button from '@mui/material/Button';
-
+import { CButton } from '../components/commons/override';
+import { Newspaper } from '@mui/icons-material'
+import { RightPanel } from './RightPanel';
 export const Layout = () => {
     return(
         <div className="layout-container">
             <div className="left-panel">
                 <div className="navigation">
-                    <Button variant='outlined' >Hello</Button>
+                    <CButton startIcon={<Newspaper/>} variant='contained' color='white' href='#' >RandomNews</CButton>
                 </div>
                 <div className="main-content"></div>
             </div>
-            <div className="right-panel"></div>
+            <div className="right-panel"
+            >
+                <RightPanel></RightPanel>
+            </div>
         </div>
     )
 }
